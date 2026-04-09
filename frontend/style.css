@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, 'Segoe UI';
+}
+
+
+.navbar, .nav-link{
+  color: grey;
+}
+
+.navbar .nav-link:hover {
+  color: white;
+}
+
+body.not-authenticated .role-logged-in {
+  display: none;
+} 
+
+body.authenticated .role-logged-out {
+  display: none;
+}
+
+.role-admin{
+  display: none;
+} 
+
+body.is-admin .role-admin {
+  display: block;
+}
+
+body:not(.is-admin) .admin-only {
+  display: none !important;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
